@@ -489,3 +489,24 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+body {
+    background-color: #000000; /* Чёрный фон */
+    color: #ffffff; /* Белый текст */
+}
+
+header {
+    background-color: #1a1a1a; /* Тёмный фон для заголовка */
+}
+
+nav ul li a {
+    color: #ffffff; /* Белый цвет ссылок */
+}
+
+#hero {
+    background-color: #333333; /* Тёмно-серый фон для секции hero */
+}
+
+footer {
+    background-color: #1a1a1a; /* Тёмный фон для подвала */
+    color: #ffffff;
+}
