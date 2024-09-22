@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,12 +9,13 @@ body {
 header {
     background-color: #4CAF50;
     color: white;
-    text-align: center;
     padding: 20px;
+    text-align: center;
 }
 
 nav {
     background-color: #333;
+    padding: 10px;
 }
 
 nav ul {
@@ -34,15 +35,16 @@ nav ul li a {
 
 .container {
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+h1, h2 {
     color: #333;
+}
+
+p {
+    line-height: 1.6;
 }
 
 .gallery {
@@ -53,8 +55,13 @@ h2 {
 
 .gallery img {
     width: 45%;
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -62,7 +69,15 @@ footer {
     padding: 10px 0;
     background-color: #4CAF50;
     color: white;
-    position: relative;
-    bottom: 0;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 100%;
+    }
+}
+
